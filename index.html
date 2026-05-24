@@ -1,0 +1,2589 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre el Carnaval de Riosucio: historia, programación, sitios turísticos, restaurantes y hoteles. La fiesta del diablo más importante de Colombia.">
+    <meta name="keywords" content="carnaval de riosucio, carnaval caldas, diablo del carnaval, fiesta colombia, turismo riosucio">
+    <meta name="author" content="Carnaval de Riosucio">
+    <title>Carnaval de Riosucio - La Fiesta del Diablo | Patrimonio Cultural de Colombia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* === RESET & BASE === */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-primary: #D4145A;
+            --color-secondary: #FFD700;
+            --color-accent: #8B0000;
+            --color-dark: #1A1A2E;
+            --color-light: #FFF8E7;
+            --color-text: #2D2D2D;
+            --color-text-light: #6B7280;
+            --color-white: #FFFFFF;
+            --color-green: #2D6A4F;
+            --color-blue: #1E3A5F;
+            --font-heading: 'Playfair Display', Georgia, serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+            --shadow-md: 0 4px 15px rgba(0,0,0,0.15);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.2);
+            --shadow-xl: 0 20px 60px rgba(0,0,0,0.25);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background: var(--color-light);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul { list-style: none; }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+
+        /* Focus visible */
+        *:focus-visible {
+            outline: 3px solid var(--color-primary);
+            outline-offset: 3px;
+            border-radius: 2px;
+        }
+
+        /* === SKIP LINK === */
+        .skip-link {
+            position: absolute;
+            top: -100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: 12px 24px;
+            border-radius: var(--radius-sm);
+            z-index: 10000;
+            font-weight: 600;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 10px;
+        }
+
+        /* === HEADER & NAV === */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(26, 26, 46, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+            transition: var(--transition);
+        }
+
+        .site-header.scrolled {
+            background: rgba(26, 26, 46, 0.98);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .nav-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 1001;
+        }
+
+        .nav-logo-icon {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+        }
+
+        .nav-logo-text {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--color-white);
+        }
+
+        .nav-logo-text span {
+            color: var(--color-secondary);
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-link {
+            padding: 8px 16px;
+            color: rgba(255,255,255,0.85);
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link:focus-visible {
+            color: var(--color-secondary);
+            background: rgba(255, 215, 0, 0.1);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--color-secondary);
+            transition: var(--transition);
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 60%;
+        }
+
+        .nav-cta {
+            background: linear-gradient(135deg, var(--color-primary), #E8365E);
+            color: var(--color-white) !important;
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(212, 20, 90, 0.4);
+            background: linear-gradient(135deg, #E8365E, var(--color-primary)) !important;
+        }
+
+        .nav-cta::after { display: none; }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            z-index: 1001;
+            padding: 8px;
+            background: none;
+            border: none;
+        }
+
+        .hamburger span {
+            width: 26px;
+            height: 2.5px;
+            background: var(--color-white);
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        /* === HERO === */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            background: var(--color-dark);
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(135deg, rgba(26,26,46,0.7), rgba(139,0,0,0.5)),
+                url('assets/img/esfinge_diablo.png') center/cover no-repeat;
+            z-index: 0;
+        }
+
+        .hero-particles {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            animation: floatUp linear infinite;
+            opacity: 0;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.7; }
+            90% { opacity: 0.7; }
+            100% { transform: translateY(-10vh) rotate(720deg); opacity: 0; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 120px 24px 80px;
+            max-width: 900px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 215, 0, 0.15);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            padding: 8px 20px;
+            border-radius: 50px;
+            color: var(--color-secondary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .hero-badge::before {
+            content: '🎭';
+            font-size: 1.1rem;
+        }
+
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2.8rem, 7vw, 5.5rem);
+            font-weight: 900;
+            color: var(--color-white);
+            line-height: 1.1;
+            margin-bottom: 24px;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero-title .highlight {
+            background: linear-gradient(135deg, var(--color-secondary), #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            font-family: var(--font-body);
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--color-primary), #E8365E);
+            color: var(--color-white);
+            box-shadow: 0 4px 20px rgba(212, 20, 90, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(212, 20, 90, 0.5);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--color-white);
+            border: 2px solid rgba(255,255,255,0.4);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: var(--color-white);
+            transform: translateY(-3px);
+        }
+
+        .hero-scroll {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        .hero-scroll a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255,255,255,0.6);
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .scroll-arrow {
+            width: 28px;
+            height: 44px;
+            border: 2px solid rgba(255,255,255,0.4);
+            border-radius: 14px;
+            position: relative;
+        }
+
+        .scroll-arrow::after {
+            content: '';
+            width: 4px;
+            height: 10px;
+            background: var(--color-secondary);
+            border-radius: 2px;
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: scrollDown 1.5s ease-in-out infinite;
+        }
+
+        @keyframes scrollDown {
+            0% { transform: translateX(-50%) translateY(0); opacity: 1; }
+            100% { transform: translateX(-50%) translateY(16px); opacity: 0; }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(-10px); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* === SECTIONS === */
+        .section {
+            padding: 100px 24px;
+        }
+
+        .section-dark {
+            background: var(--color-dark);
+            color: var(--color-white);
+        }
+
+        .section-gradient {
+            background: linear-gradient(180deg, var(--color-light) 0%, #FFE8CC 100%);
+        }
+
+        .section-accent {
+            background: linear-gradient(135deg, var(--color-dark) 0%, #2D1B4E 100%);
+            color: var(--color-white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--color-primary);
+            margin-bottom: 16px;
+        }
+
+        .section-dark .section-label,
+        .section-accent .section-label {
+            color: var(--color-secondary);
+        }
+
+        .section-label::before,
+        .section-label::after {
+            content: '';
+            width: 30px;
+            height: 2px;
+            background: currentColor;
+            border-radius: 1px;
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--color-text-light);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .section-dark .section-subtitle,
+        .section-accent .section-subtitle {
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* === HISTORY === */
+        .history-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .history-image-wrapper {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .history-image-wrapper::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 50%, rgba(26,26,46,0.6));
+            z-index: 1;
+        }
+
+        .history-image-wrapper img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        .history-badge {
+            position: absolute;
+            bottom: 24px;
+            left: 24px;
+            z-index: 2;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 12px 24px;
+            border-radius: var(--radius-sm);
+            color: var(--color-white);
+            font-weight: 600;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .history-content h3 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--color-dark);
+        }
+
+        .history-content p {
+            color: var(--color-text-light);
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+
+        .history-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 32px;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .timeline-year {
+            min-width: 70px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+            color: var(--color-white);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .timeline-text {
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+            padding-top: 8px;
+        }
+
+        /* === STATS === */
+        .stats-section {
+            background: linear-gradient(135deg, var(--color-primary), #E8365E, var(--color-accent));
+            padding: 80px 24px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            text-align: center;
+            color: var(--color-white);
+        }
+
+        .stat-number {
+            font-family: var(--font-heading);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 900;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.85;
+            font-weight: 500;
+        }
+
+        /* === GALLERY === */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .gallery-item:first-child {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(26,26,46,0.8) 0%, transparent 60%);
+            display: flex;
+            align-items: flex-end;
+            padding: 24px;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay-text {
+            color: var(--color-white);
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        /* === LIGHTBOX === */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 10000;
+            background: rgba(0,0,0,0.95);
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 85vh;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            width: 48px;
+            height: 48px;
+            background: rgba(255,255,255,0.1);
+            border: none;
+            border-radius: 50%;
+            color: var(--color-white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .lightbox-close:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 48px;
+            height: 48px;
+            background: rgba(255,255,255,0.1);
+            border: none;
+            border-radius: 50%;
+            color: var(--color-white);
+            font-size: 1.3rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .lightbox-nav:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .lightbox-prev { left: 24px; }
+        .lightbox-next { right: 24px; }
+
+        /* === TOURIST SITES === */
+        .sites-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .site-card {
+            background: var(--color-white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .site-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .site-card-image {
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .site-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .site-card:hover .site-card-image img {
+            transform: scale(1.1);
+        }
+
+        .site-card-content {
+            padding: 24px;
+        }
+
+        .site-card-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(212,20,90,0.1), rgba(212,20,90,0.05));
+            color: var(--color-primary);
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .site-card-title {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--color-dark);
+        }
+
+        .site-card-text {
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+            line-height: 1.7;
+        }
+
+        .site-card-footer {
+            padding: 16px 24px;
+            border-top: 1px solid rgba(0,0,0,0.06);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .site-card-rating {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: var(--color-secondary);
+            font-size: 0.9rem;
+        }
+
+        .site-card-link {
+            color: var(--color-primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .site-card-link:hover {
+            gap: 8px;
+        }
+
+        /* === RESTAURANTS === */
+        .restaurants-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .restaurant-card {
+            display: flex;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .restaurant-card:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,215,0,0.3);
+            transform: translateY(-4px);
+        }
+
+        .restaurant-image {
+            width: 200px;
+            min-height: 200px;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .restaurant-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .restaurant-content {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .restaurant-name {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--color-white);
+            margin-bottom: 8px;
+        }
+
+        .restaurant-cuisine {
+            color: var(--color-secondary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .restaurant-desc {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .restaurant-info {
+            display: flex;
+            gap: 16px;
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.6);
+        }
+
+        .restaurant-info span {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        /* === HOTELS === */
+        .hotels-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .hotel-card {
+            background: var(--color-white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .hotel-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .hotel-image {
+            height: 240px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hotel-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .hotel-card:hover .hotel-image img {
+            transform: scale(1.1);
+        }
+
+        .hotel-price {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .hotel-stars {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(10px);
+            padding: 4px 12px;
+            border-radius: 50px;
+            color: var(--color-secondary);
+            font-size: 0.85rem;
+        }
+
+        .hotel-content {
+            padding: 24px;
+        }
+
+        .hotel-name {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--color-dark);
+            margin-bottom: 8px;
+        }
+
+        .hotel-location {
+            color: var(--color-text-light);
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .hotel-amenities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .amenity-tag {
+            background: rgba(212,20,90,0.08);
+            color: var(--color-primary);
+            padding: 4px 10px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        /* === PROGRAMMING === */
+        .programming-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .programming-header img {
+            max-width: 500px;
+            margin: 0 auto 32px;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .program-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .program-tab {
+            padding: 10px 24px;
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 50px;
+            background: transparent;
+            color: rgba(255,255,255,0.7);
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: var(--font-body);
+        }
+
+        .program-tab:hover {
+            border-color: var(--color-secondary);
+            color: var(--color-secondary);
+        }
+
+        .program-tab.active {
+            background: var(--color-primary);
+            border-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .program-list {
+            display: grid;
+            gap: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .program-item {
+            display: grid;
+            grid-template-columns: 100px 1fr auto;
+            gap: 24px;
+            align-items: center;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: var(--radius-md);
+            padding: 20px 24px;
+            transition: var(--transition);
+        }
+
+        .program-item:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,215,0,0.3);
+            transform: translateX(8px);
+        }
+
+        .program-date {
+            text-align: center;
+        }
+
+        .program-day {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--color-secondary);
+            line-height: 1;
+        }
+
+        .program-month {
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.6);
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .program-info h4 {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            color: var(--color-white);
+            margin-bottom: 4px;
+        }
+
+        .program-info p {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+
+        .program-time {
+            background: rgba(255,215,0,0.1);
+            border: 1px solid rgba(255,215,0,0.3);
+            padding: 8px 16px;
+            border-radius: 50px;
+            color: var(--color-secondary);
+            font-weight: 600;
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        /* === CONTACT / CTA === */
+        .cta-section {
+            background: linear-gradient(135deg, var(--color-primary), #E8365E, var(--color-accent));
+            padding: 100px 24px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,215,0,0.1) 0%, transparent 50%);
+            animation: rotateBg 20s linear infinite;
+        }
+
+        @keyframes rotateBg {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 900;
+            color: var(--color-white);
+            margin-bottom: 16px;
+        }
+
+        .cta-text {
+            font-size: 1.15rem;
+            color: rgba(255,255,255,0.85);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .cta-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+            gap: 12px;
+        }
+
+        .cta-input {
+            flex: 1;
+            padding: 14px 24px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50px;
+            background: rgba(255,255,255,0.1);
+            color: var(--color-white);
+            font-size: 1rem;
+            font-family: var(--font-body);
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+
+        .cta-input::placeholder {
+            color: rgba(255,255,255,0.6);
+        }
+
+        .cta-input:focus {
+            outline: none;
+            border-color: var(--color-secondary);
+            background: rgba(255,255,255,0.15);
+        }
+
+        .cta-btn {
+            padding: 14px 32px;
+            background: var(--color-secondary);
+            color: var(--color-dark);
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            font-family: var(--font-body);
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(255,215,0,0.4);
+        }
+
+        /* === FOOTER === */
+        .site-footer {
+            background: var(--color-dark);
+            color: rgba(255,255,255,0.7);
+            padding: 80px 24px 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 48px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-brand h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--color-white);
+            margin-bottom: 16px;
+        }
+
+        .footer-brand h3 span {
+            color: var(--color-secondary);
+        }
+
+        .footer-brand p {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--color-primary);
+            transform: translateY(-3px);
+        }
+
+        .footer-col h4 {
+            color: var(--color-white);
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: var(--color-primary);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--color-secondary);
+            padding-left: 8px;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 48px auto 0;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.85rem;
+        }
+
+        /* === BACK TO TOP === */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 48px;
+            height: 48px;
+            background: var(--color-primary);
+            color: var(--color-white);
+            border: none;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: var(--transition);
+            box-shadow: var(--shadow-md);
+            z-index: 999;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            background: var(--color-accent);
+            transform: translateY(-4px);
+        }
+
+        /* === ANIMATIONS === */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 1200px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .history-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .sites-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hotels-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .program-item {
+                grid-template-columns: 80px 1fr;
+                gap: 16px;
+            }
+
+            .program-time {
+                grid-column: 2;
+                justify-self: start;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 360px;
+                height: 100vh;
+                background: var(--color-dark);
+                flex-direction: column;
+                padding: 100px 32px 32px;
+                gap: 8px;
+                transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: -10px 0 40px rgba(0,0,0,0.3);
+                overflow-y: auto;
+            }
+
+            .nav-menu.open {
+                right: 0;
+            }
+
+            .nav-link {
+                width: 100%;
+                padding: 12px 16px;
+                font-size: 1rem;
+            }
+
+            .nav-cta {
+                text-align: center;
+                margin-top: 16px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .gallery-item:first-child {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .sites-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .restaurants-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .restaurant-card {
+                flex-direction: column;
+            }
+
+            .restaurant-image {
+                width: 100%;
+                min-height: 180px;
+            }
+
+            .hotels-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 32px;
+            }
+
+            .cta-form {
+                flex-direction: column;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section {
+                padding: 70px 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-item:first-child {
+                grid-column: span 1;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .program-item {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 12px;
+            }
+
+            .program-time {
+                justify-self: center;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* Mobile menu overlay */
+        .nav-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 999;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .nav-overlay.active {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Header & Navigation -->
+    <header class="site-header" role="banner">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" aria-label="Carnaval de Riosucio - Inicio">
+                <div class="nav-logo-icon" aria-hidden="true"></div>
+                <div class="nav-logo-text">Carnaval <span>Riosucio</span></div>
+            </a>
+
+            <nav role="navigation" aria-label="Navegación principal">
+                <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+                <ul class="nav-menu" id="navMenu" role="menubar">
+                    <li role="none"><a href="#inicio" class="nav-link active" role="menuitem">Inicio</a></li>
+                    <li role="none"><a href="#historia" class="nav-link" role="menuitem">Historia</a></li>
+                    <li role="none"><a href="#galeria" class="nav-link" role="menuitem">Galería</a></li>
+                    <li role="none"><a href="#sitios" class="nav-link" role="menuitem">Sitios</a></li>
+                    <li role="none"><a href="#restaurantes" class="nav-link" role="menuitem">Restaurantes</a></li>
+                    <li role="none"><a href="#hoteles" class="nav-link" role="menuitem">Hoteles</a></li>
+                    <li role="none"><a href="#programacion" class="nav-link" role="menuitem">Programación</a></li>
+                    <li role="none"><a href="#contacto" class="nav-link nav-cta" role="menuitem">¡Ven! 🎉</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="inicio" aria-label="Sección principal del Carnaval de Riosucio">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-particles" id="heroParticles" aria-hidden="true"></div>
+            <div class="hero-content">
+                <div class="hero-badge">Patrimonio Cultural de la Nación</div>
+                <h1 class="hero-title">
+                    La Fiesta del <span class="highlight">Diablo</span> Más Grande de Colombia
+                </h1>
+                <p class="hero-subtitle">
+                    Vive la magia del Carnaval de Riosucio, una celebración centenaria donde la tradición, 
+                    el color y la fe se unen en una explosión de cultura única en el mundo.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#programacion" class="btn btn-primary">Ver Programación 2024 🎭</a>
+                    <a href="#historia" class="btn btn-outline">Conoce la Historia</a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <a href="#historia" aria-label="Desplázate hacia abajo">
+                    <div class="scroll-arrow"></div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section" aria-label="Estadísticas del carnaval">
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Años de Historia</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-number" data-target="80">0</div>
+                    <div class="stat-label">Mil Visitantes</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-number" data-target="12">0</div>
+                    <div class="stat-label">Días de Fiesta</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Comparsas</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section class="section section-gradient" id="historia" aria-labelledby="historia-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-label">Nuestras Raíces</div>
+                    <h2 class="section-title" id="historia-title">Historia del Carnaval de Riosucio</h2>
+                    <p class="section-subtitle">Un legado de más de cinco siglos que fusiona tradiciones indígenas, africanas y españolas en una celebración única.</p>
+                </div>
+
+                <div class="history-grid">
+                    <div class="history-image-wrapper reveal">
+                        <img src="assets/img/matachin.png" 
+                             alt="Póster del Carnaval de Riosucio con máscara de diablo colorida y confeti" 
+                             width="600" height="600" loading="eager">
+                        <div class="history-badge"> Patrimonio Inmaterial</div>
+                    </div>
+
+                    <div class="history-content reveal">
+                        <h3>Una Tradición que Nació de la Unión de Dos Pueblos</h3>
+                        <p>
+                            El Carnaval de Riosucio, declarado Patrimonio Cultural de la Nación en 2010, 
+                            tiene sus raíces en la fusión de las culturas indígena Embera, africana y española. 
+                            Nació en el municipio de Riosucio, en el departamento de Caldas, en el corazón 
+                            del Eje Cafetero colombiano.
+                        </p>
+                        <p>
+                            La tradición del diablo carnavalero proviene de la necesidad de los colonizadores 
+                            españoles de convertir a los indígenas, quienes adaptaron las festividades 
+                            católicas incorporando sus propias creencias y rituales ancestrales.
+                        </p>
+
+                        <div class="history-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-year">1530</div>
+                                <div class="timeline-text">Los colonizadores españoles llegan a la región de Riosucio</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">1846</div>
+                                <div class="timeline-text">Primera celebración documentada del Carnaval del Diablo</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2010</div>
+                                <div class="timeline-text">Declarado Patrimonio Cultural Inmaterial de Colombia</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2024</div>
+                                <div class="timeline-text">Celebración con más de 80.000 visitantes nacionales e internacionales</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="section" id="galeria" aria-labelledby="galeria-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-label">Momentos Mágicos</div>
+                    <h2 class="section-title" id="galeria-title">Galería del Carnaval</h2>
+                    <p class="section-subtitle">Imágenes que capturan la esencia, el color y la energía de la fiesta más vibrante de Colombia.</p>
+                </div>
+
+                <div class="gallery-grid" role="list" aria-label="Galería de imágenes del carnaval">
+                    <div class="gallery-item reveal" role="listitem">
+                        <img src="assets/img/esfinge_diablo.png" 
+                             alt="Gran estatua del diablo del carnaval de Riosucio con cuernos, alas rojas y cetro dorado durante la procesión" 
+                             width="800" height="600" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-overlay-text">El Diablo Mayor del Carnaval</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item reveal" role="listitem">
+                        <img src="assets/img/danza.png" 
+                             alt="Mujer con vestido amarillo dorado y máscara roja de carnaval celebrando con los brazos levantados" 
+                             width="400" height="300" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-overlay-text">Danza del Carnaval</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item reveal" role="listitem">
+                        <img src="assets/img/desfile.jfif" 
+                             alt="Desfile nocturno del carnaval con multitudes y carroza del diablo iluminada" 
+                             width="400" height="300" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-overlay-text">Desfile Nocturno</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item reveal" role="listitem">
+                        <img src="assets/img/matachi2.png" 
+                             alt="Mujer con traje multicolor púrpura y tocado de plumas del carnaval de Riosucio" 
+                             width="400" height="300" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-overlay-text">Matachin del Carnaval</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item reveal" role="listitem">
+                        <img src="assets/img/comparsa.jpg" 
+                             alt="Dos comparsas con trajes coloridos de plumas y máscaras doradas durante el desfile del carnaval" 
+                             width="400" height="300" loading="lazy">
+                        <div class="gallery-overlay">
+                            <span class="gallery-overlay-text">Comparsas Tradicionales</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imágenes">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar visor"></button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Imagen anterior">◀</button>
+            <img src="" alt="" id="lightboxImg">
+            <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Imagen siguiente">▶</button>
+        </div>
+
+        <!-- Tourist Sites Section -->
+        <section class="section section-gradient" id="sitios" aria-labelledby="sitios-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-label">Descubre Riosucio</div>
+                    <h2 class="section-title" id="sitios-title">Sitios Turísticos</h2>
+                    <p class="section-subtitle">Explora los lugares más emblemáticos de Riosucio y sus alrededores en el corazón del Eje Cafetero.</p>
+                </div>
+
+                <div class="sites-grid">
+                    <article class="site-card reveal">
+                        <div class="site-card-image">
+                            <img src="assets/img/sanSebastian.png" 
+                                 alt="Iglesia colonial de Riosucio con torre campanario y arquitectura española del siglo XVII" 
+                                 width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="site-card-content">
+                            <span class="site-card-tag">Patrimonio</span>
+                            <h3 class="site-card-title">Iglesia de San Sebastián</h3>
+                            <p class="site-card-text">Hermosa iglesia colonial del siglo XIX, centro espiritual del carnaval y joya arquitectónica del municipio.</p>
+                        </div>
+                        <div class="site-card-footer">
+                            <div class="site-card-rating">⭐⭐⭐⭐⭐</div>
+                            <a href="#" class="site-card-link">Ver más →</a>
+                        </div>
+                    </article>
+
+                    <article class="site-card reveal">
+                        <div class="site-card-image">
+                            <img src="https://image.qwenlm.ai/public_source/6ff6fed0-9e54-4de6-a61b-0330b316ae50/1ff983d2f-ec8e-4740-8fc7-2a311198781a.png" 
+                                 alt="Plaza principal de Riosucio con palmeras y ambiente campestre" 
+                                 width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="site-card-content">
+                            <span class="site-card-tag">Cultural</span>
+                            <h3 class="site-card-title">Parque Principal</h3>
+                            <p class="site-card-text">Corazón del municipio donde se realizan las principales actividades del carnaval y eventos culturales.</p>
+                        </div>
+                        <div class="site-card-footer">
+                            <div class="site-card-rating">⭐⭐⭐⭐⭐</div>
+                            <a href="#" class="site-card-link">Ver más →</a>
+                        </div>
+                    </article>
+
+                    <article class="site-card reveal">
+                        <div class="site-card-image">
+                            <img src="https://image.qwenlm.ai/public_source/6ff6fed0-9e54-4de6-a61b-0330b316ae50/1abfd8c9d-5457-4a2c-ba82-83fedf8f8fba.png" 
+                                 alt="Museo del Carnaval de Riosucio con exhibiciones de trajes y máscaras tradicionales" 
+                                 width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="site-card-content">
+                            <span class="site-card-tag">Museo</span>
+                            <h3 class="site-card-title">Museo del Carnaval</h3>
+                            <p class="site-card-text">Espacio dedicado a preservar la historia y tradición del carnaval con trajes, máscaras y documentos históricos.</p>
+                        </div>
+                        <div class="site-card-footer">
+                            <div class="site-card-rating">⭐⭐⭐⭐</div>
+                            <a href="#" class="site-card-link">Ver más →</a>
+                        </div>
+                    </article>
+
+                    <article class="site-card reveal">
+                        <div class="site-card-image">
+                            <img src="https://image.qwenlm.ai/public_source/6ff6fed0-9e54-4de6-a61b-0330b316ae50/15ad08919-93ab-4064-a2ae-6508cef93e71.png" 
+                                 alt="Finca cafetera tradicional en las montañas de Riosucio con vista panorámica" 
+                                 width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="site-card-content">
+                            <span class="site-card-tag">Naturaleza</span>
+                            <h3 class="site-card-title">Fincas Cafeteras</h3>
+                            <p class="site-card-text">Recorre las fincas cafeteras tradicionales y conoce el proceso del café desde la semilla hasta la taza.</p>
+                        </div>
+                        <div class="site-card-footer">
+                            <div class="site-card-rating">⭐⭐⭐⭐⭐</div>
+                            <a href="#" class="site-card-link">Ver más →</a>
+                        </div>
+                    </article>
+
+                    <article class="site-card reveal">
+                        <div class="site-card-image">
+                            <img src="https://image.qwenlm.ai/public_source/6ff6fed0-9e54-4de6-a61b-0330b316ae50/159aca205-4537-4c84-98d4-7d42ae9adfbc.png" 
+                                 alt="Mirador natural con vista panorámica del valle de Riosucio y montañas verdes" 
+                                 width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="site-card-content">
+                            <span class="site-card-tag">Aventura</span>
+                            <h3 class="site-card-title">Mirador Alto de la Cruz</h3>
+                            <p class="site-card-text">Impresionante vista panorámica del valle de Riosucio y las montañas del Eje Cafetero colombiano.</p>
+                        </div>
+                        <div class="site-card-footer">
+                            <div class="site-card-rating">⭐⭐⭐⭐</div>
+                            <a href="#" class="site-card-link">Ver más →</a>
+                        </div>
+                    </article>
+
+                    <article class="site-card reveal">
+                        <div class="site-card-image">
+                            <img src="https://image.qwenlm.ai/public_source/6ff6fed0-9e54-4de6-a61b-0330b316ae50/1ff983d2f-ec8e-4740-8fc7-2a311198781a.png" 
+                                 alt="Cascada natural en medio del bosque tropical cerca de Riosucio" 
+                                 width="400" height="300" loading="lazy">
+                        </div>
+                        <div class="site-card-content">
+                            <span class="site-card-tag">Naturaleza</span>
+                            <h3 class="site-card-title">Cascada La Cristalina</h3>
+                            <p class="site-card-text">Hermosa cascada rodeada de vegetación tropical, perfecta para caminatas ecológicas y fotografía.</p>
+                        </div>
+                        <div class="site-card-footer">
+                            <div class="site-card-rating">⭐⭐⭐⭐⭐</div>
+                            <a href="#" class="site-card-link">Ver más →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Restaurants Section -->
+        <section class="section section-accent" id="restaurantes" aria-labelledby="restaurantes-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-label">Sabores Locales</div>
+                    <h2 class="section-title" id="restaurantes-title">Restaurantes Recomendados</h2>
+                    <p class="section-subtitle">Disfruta de la gastronomía típica del Eje Cafetero con los mejores restaurantes de Riosucio.</p>
+                </div>
+
+                <div class="restaurants-grid">
+                    <article class="restaurant-card reveal">
+                        <div class="restaurant-image">
+                            <img src="https://image.qwenlm.ai/public_source/6ff6fed0-9e54-4de6-a61b-0330b316ae50/159aca205-4537-4c84-98d4-7d42ae9adfbc.png" 
+                                 alt="Interior de restaurante tradicional con decoración de carnaval y platos típicos colombianos" 
+                                 width="300" height="300" loading="lazy">
+                        </div>
+                        <div class="restaurant-content">
+                            <h3 class="restaurant-name">El Fogón del Carnaval</h3>
+                            <p class="restaurant-cuisine"> Cocina Tradicional Colombiana</p>
+                            <p class="restaurant-desc">Especialidad en bandeja paisa, sancocho y platos típicos del Eje Cafetero con ingredientes locales frescos.</p>
+                            <div class="restaurant-info">
+                                <span> Centro, Riosucio</span>
+                                <span>⭐ 4.8</span>
+                                <span>💰 $$</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="restaurant-card reveal">
+                        <div class="restaurant-image">
+                            <img src="https://image.qwenlm.ai/public_source/6ff6fed0-9e54-4de6-a61b-0330b316ae50/1ff983d2f-ec8e-4740-8fc7-2a311198781a.png" 
+                                 alt="Restaurante con vista a las montañas y cocina fusión colombiana moderna" 
+                                 width="300" height="300" loading="lazy">
+                        </div>
+                        <div class="restaurant-content">
+                            <h3 class="restaurant-name">La Mesa del Diablo</h3>
+                            <p class="restaurant-cuisine"> Cocina Fusión con Temática</p>
+                            <p class="restaurant-desc">Restaurante temático del carnaval con cocina de autor que fusiona sabores tradicionales con técnicas modernas.</p>
+                            <div class="restaurant-info">
+                                <span>📍 Parque Principal</span>
+                                <span>⭐ 4.9</span>
+                                <span>💰 $$$</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="restaurant-card reveal">
+                        <div class="restaurant-image">
+                            <img src="https://image.qwenlm.ai/public_source/6ff6fed0-9e54-4de6-a61b-0330b316ae50/1abfd8c9d-5457-4a2c-ba82-83fedf8f8fba.png" 
+                                 alt="Cafetería artesanal con ambiente acogedor y pasteles de café" 
+                                 width="300" height="300" loading="lazy">
+                        </div>
+                        <div class="restaurant-content">
+                            <h3 class="restaurant-name">Café Montaña</h3>
+                            <p class="restaurant-cuisine">☕ Café de Origen & Repostería</p>
+                            <p class="restaurant-desc">Los mejores cafés de origen con repostería artesanal. Vista panorámica a las montañas cafeteras.</p>
+                            <div class="restaurant-info">
+                                <span>📍 Calle 5, Riosucio</span>
+                                <span>⭐ 4.7</span>
+                                <span>💰 $</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="restaurant-card reveal">
+                        <div class="restaurant-image">
+                            <img src="https://image.qwenlm.ai/public_source/6ff6fed0-9e54-4de6-a61b-0330b316ae50/15ad08919-93ab-4064-a2ae-6508cef93e71.png" 
+                                 alt="Restaurante campestre con comida típica del campo colombiano" 
+                                 width="300" height="300" loading="lazy">
+                        </div>
+                        <div class="restaurant-content">
+                            <h3 class="restaurant-name">El Rancho Paisa</h3>
+                            <p class="restaurant-cuisine">🌽 Comida Campesina & Asados</p>
+                            <p class="restaurant-desc">Experiencia gastronómica auténtica con asados al carbón, arepa de maíz y jugos naturales de frutas tropicales.</p>
+                            <div class="restaurant-info">
+                                <span>📍 Vía La Montaña</span>
+                                <span>⭐ 4.6</span>
+                                <span>💰 $$</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hotels Section -->
+        <section class="section" id="hoteles" aria-labelledby="hoteles-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-label">Hospedaje</div>
+                    <h2 class="section-title" id="hoteles-title">Hoteles Recomendados</h2>
+                    <p class="section-subtitle">Encuentra el hospedaje perfecto para disfrutar del carnaval con comodidad y estilo.</p>
+                </div>
+
+                <div class="hotels-grid">
+                    <article class="hotel-card reveal">
+                        <div class="hotel-image">
+                            <img src="https://image.qwenlm.ai/public_source/6ff6fed0-9e54-4de6-a61b-0330b316ae50/159aca205-4537-4c84-98d4-7d42ae9adfbc.png" 
+                                 alt="Habitación de hotel boutique con decoración colonial y vista a las montañas" 
+                                 width="400" height="300" loading="lazy">
+                            <span class="hotel-price">$120/noche</span>
+                            <span class="hotel-stars">⭐⭐⭐⭐</span>
+                        </div>
+                        <div class="hotel-content">
+                            <h3 class="hotel-name">Hotel Boutique El Carnaval</h3>
+                            <p class="hotel-location"> Centro Histórico, Riosucio</p>
+                            <div class="hotel-amenities">
+                                <span class="amenity-tag">WiFi</span>
+                                <span class="amenity-tag">Desayuno</span>
+                                <span class="amenity-tag">Parqueo</span>
+                                <span class="amenity-tag">Vista Montaña</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="hotel-card reveal">
+                        <div class="hotel-image">
+                            <img src="https://image.qwenlm.ai/public_source/6ff6fed0-9e54-4de6-a61b-0330b316ae50/1ff983d2f-ec8e-4740-8fc7-2a311198781a.png" 
+                                 alt="Finca hotel con piscina y jardines tropicales rodeados de café" 
+                                 width="400" height="300" loading="lazy">
+                            <span class="hotel-price">$180/noche</span>
+                            <span class="hotel-stars">⭐⭐⭐⭐⭐</span>
+                        </div>
+                        <div class="hotel-content">
+                            <h3 class="hotel-name">Finca Hotel Cafetera</h3>
+                            <p class="hotel-location"> Km 3 Vía Riosucio-Supía</p>
+                            <div class="hotel-amenities">
+                                <span class="amenity-tag">Piscina</span>
+                                <span class="amenity-tag">Spa</span>
+                                <span class="amenity-tag">Tour Café</span>
+                                <span class="amenity-tag">Restaurante</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="hotel-card reveal">
+                        <div class="hotel-image">
+                            <img src="https://image.qwenlm.ai/public_source/6ff6fed0-9e54-4de6-a61b-0330b316ae50/1abfd8c9d-5457-4a2c-ba82-83fedf8f8fba.png" 
+                                 alt="Hotel económico limpio y cómodo cerca del parque principal" 
+                                 width="400" height="300" loading="lazy">
+                            <span class="hotel-price">$45/noche</span>
+                            <span class="hotel-stars">⭐⭐⭐</span>
+                        </div>
+                        <div class="hotel-content">
+                            <h3 class="hotel-name">Hotel Montaña Verde</h3>
+                            <p class="hotel-location">📍 Calle 7, Riosucio</p>
+                            <div class="hotel-amenities">
+                                <span class="amenity-tag">WiFi</span>
+                                <span class="amenity-tag">Agua Caliente</span>
+                                <span class="amenity-tag">TV Cable</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programming Section -->
+        <section class="section section-accent" id="programacion" aria-labelledby="programacion-title">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-label">Agenda 2024</div>
+                    <h2 class="section-title" id="programacion-title">Programación del Carnaval</h2>
+                    <p class="section-subtitle">No te pierdas ningún evento. Aquí encontrarás toda la programación oficial del Carnaval de Riosucio 2024.</p>
+                </div>
+
+                <div class="programming-header reveal">
+                    <img src="https://image.qwenlm.ai/public_source/6ff6fed0-9e54-4de6-a61b-0330b316ae50/15ad08919-93ab-4064-a2ae-6508cef93e71.png" 
+                         alt="Póster oficial de programación del Carnaval de Riosucio 2024 con máscara de diablo y notas musicales" 
+                         width="500" height="500" loading="lazy">
+                </div>
+
+                <div class="program-tabs reveal" role="tablist" aria-label="Filtrar por día">
+                    <button class="program-tab active" data-day="all" role="tab" aria-selected="true">Todos</button>
+                    <button class="program-tab" data-day="1" role="tab" aria-selected="false">Día 1</button>
+                    <button class="program-tab" data-day="2" role="tab" aria-selected="false">Día 2</button>
+                    <button class="program-tab" data-day="3" role="tab" aria-selected="false">Día 3</button>
+                    <button class="program-tab" data-day="4" role="tab" aria-selected="false">Día 4</button>
+                    <button class="program-tab" data-day="5" role="tab" aria-selected="false">Día 5</button>
+                </div>
+
+                <div class="program-list" id="programList" role="tabpanel" aria-label="Lista de eventos">
+                    <div class="program-item reveal" data-day="1">
+                        <div class="program-date">
+                            <div class="program-day">01</div>
+                            <div class="program-month">Ene</div>
+                        </div>
+                        <div class="program-info">
+                            <h4>Inauguración & Desfile de Apertura</h4>
+                            <p>Comparsas, carrozas y la elección de la Reina del Carnaval</p>
+                        </div>
+                        <span class="program-time">4:00 PM</span>
+                    </div>
+                    <div class="program-item reveal" data-day="1">
+                        <div class="program-date">
+                            <div class="program-day">01</div>
+                            <div class="program-month">Ene</div>
+                        </div>
+                        <div class="program-info">
+                            <h4>Concierto de Apertura</h4>
+                            <p>Música tradicional y grupos folclóricos del Eje Cafetero</p>
+                        </div>
+                        <span class="program-time">7:00 PM</span>
+                    </div>
+                    <div class="program-item reveal" data-day="2">
+                        <div class="program-date">
+                            <div class="program-day">02</div>
+                            <div class="program-month">Ene</div>
+                        </div>
+                        <div class="program-info">
+                            <h4>Desfile de las Comparsas</h4>
+                            <p>Las mejores comparsas del carnaval compiten por el primer premio</p>
+                        </div>
+                        <span class="program-time">10:00 AM</span>
+                    </div>
+                    <div class="program-item reveal" data-day="2">
+                        <div class="program-date">
+                            <div class="program-day">02</div>
+                            <div class="program-month">Ene</div>
+                        </div>
+                        <div class="program-info">
+                            <h4>Festival Gastronómico</h4>
+                            <p>Degustación de platos típicos del Eje Cafetero colombiano</p>
+                        </div>
+                        <span class="program-time">12:00 PM</span>
+                    </div>
+                    <div class="program-item reveal" data-day="3">
+                        <div class="program-date">
+                            <div class="program-day">03</div>
+                            <div class="program-month">Ene</div>
+                        </div>
+                        <div class="program-info">
+                            <h4>Gran Desfile del Diablo</h4>
+                            <p>El evento central: el desfile del diablo con carrozas monumentales</p>
+                        </div>
+                        <span class="program-time">2:00 PM</span>
+                    </div>
+                    <div class="program-item reveal" data-day="3">
+                        <div class="program-date">
+                            <div class="program-day">03</div>
+                            <div class="program-month">Ene</div>
+                        </div>
+                        <div class="program-info">
+                            <h4>Concierto Sinfónico</h4>
+                            <p>Orquesta filarmónica con repertorio de música colombiana</p>
+                        </div>
+                        <span class="program-time">6:00 PM</span>
+                    </div>
+                    <div class="program-item reveal" data-day="4">
+                        <div class="program-date">
+                            <div class="program-day">04</div>
+                            <div class="program-month">Ene</div>
+                        </div>
+                        <div class="program-info">
+                            <h4>Desfile Infantil</h4>
+                            <p>Los más pequeños muestran su talento con comparsas y trajes coloridos</p>
+                        </div>
+                        <span class="program-time">9:00 AM</span>
+                    </div>
+                    <div class="program-item reveal" data-day="4">
+                        <div class="program-date">
+                            <div class="program-day">04</div>
+                            <div class="program-month">Ene</div>
+                        </div>
+                        <div class="program-info">
+                            <h4>Festival de Danzas</h4>
+                            <p>Grupos de danza de toda Colombia presentan sus coreografías</p>
+                        </div>
+                        <span class="program-time">3:00 PM</span>
+                    </div>
+                    <div class="program-item reveal" data-day="5">
+                        <div class="program-date">
+                            <div class="program-day">05</div>
+                            <div class="program-month">Ene</div>
+                        </div>
+                        <div class="program-info">
+                            <h4>Gran Final & Clausura</h4>
+                            <p>Entrega de premios, elección final y despedida del carnaval</p>
+                        </div>
+                        <span class="program-time">5:00 PM</span>
+                    </div>
+                    <div class="program-item reveal" data-day="5">
+                        <div class="program-date">
+                            <div class="program-day">05</div>
+                            <div class="program-month">Ene</div>
+                        </div>
+                        <div class="program-info">
+                            <h4>Concierto de Cierre</h4>
+                            <p>Artistas nacionales e internacionales en el escenario principal</p>
+                        </div>
+                        <span class="program-time">8:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" id="contacto" aria-labelledby="cta-title">
+            <div class="cta-content reveal">
+                <h2 class="cta-title" id="cta-title">¡No Te Quedes Fuera! 🎭</h2>
+                <p class="cta-text">Suscríbete para recibir la programación actualizada, ofertas de hospedaje y todo lo que necesitas para vivir el Carnaval de Riosucio.</p>
+                <form class="cta-form" id="ctaForm" aria-label="Formulario de suscripción">
+                    <label for="emailInput" class="sr-only">Tu correo electrónico</label>
+                    <input type="email" id="emailInput" class="cta-input" placeholder="Tu correo electrónico" required aria-required="true">
+                    <button type="submit" class="cta-btn">Suscribirme 🎉</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Carnaval <span>Riosucio</span></h3>
+                <p>El Carnaval del Diablo más grande de Colombia. Una celebración centenaria que une tradición, cultura y fe en el corazón del Eje Cafetero.</p>
+                <div class="footer-social" aria-label="Redes sociales">
+                    <a href="#" class="social-link" aria-label="Facebook del Carnaval de Riosucio">f</a>
+                    <a href="#" class="social-link" aria-label="Instagram del Carnaval de Riosucio">ig</a>
+                    <a href="#" class="social-link" aria-label="Twitter del Carnaval de Riosucio">𝕏</a>
+                    <a href="#" class="social-link" aria-label="YouTube del Carnaval de Riosucio">▶</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Explorar</h4>
+                <div class="footer-links">
+                    <a href="#historia">Historia</a>
+                    <a href="#galeria">Galería</a>
+                    <a href="#sitios">Sitios Turísticos</a>
+                    <a href="#restaurantes">Restaurantes</a>
+                    <a href="#hoteles">Hoteles</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Información</h4>
+                <div class="footer-links">
+                    <a href="#programacion">Programación</a>
+                    <a href="#">Cómo Llegar</a>
+                    <a href="#">Alojamiento</a>
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Contacto</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <div class="footer-links">
+                    <a href="#">📍 Riosucio, Caldas, Colombia</a>
+                    <a href="tel:+576068881234">📞 +57 (6) 888-1234</a>
+                    <a href="mailto:info@carnavalriosucio.co">️ info@carnavalriosucio.co</a>
+                    <a href="#">🕐 Lun-Vie: 8AM - 6PM</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Carnaval de Riosucio. Todos los derechos reservados.</p>
+            <p>Patrimonio Cultural Inmaterial de Colombia 🇨🇴</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Carnaval de Riosucio 2024",
+        "description": "El Carnaval del Diablo más grande de Colombia. Una celebración centenaria en el corazón del Eje Cafetero.",
+        "startDate": "2024-01-01",
+        "endDate": "2024-01-06",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+            "@type": "Place",
+            "name": "Riosucio, Caldas",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Riosucio",
+                "addressRegion": "Caldas",
+                "addressCountry": "CO"
+            }
+        },
+        "organizer": {
+            "@type": "Organization",
+            "name": "Alcaldía de Riosucio",
+            "url": "https://riosucio-caldas.gov.co"
+        },
+        "image": "https://image.qwenlm.ai/public_source/6ff6fed0-9e54-4de6-a61b-0330b316ae50/15ad08919-93ab-4064-a2ae-6508cef93e71.png"
+    }
+    </script>
+
+    <script>
+        'use strict';
+
+        // === NAVIGATION ===
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const navMenu = document.getElementById('navMenu');
+        const navOverlay = document.getElementById('navOverlay');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function toggleMenu() {
+            const isOpen = navMenu.classList.toggle('open');
+            hamburgerBtn.classList.toggle('active');
+            navOverlay.classList.toggle('active');
+            hamburgerBtn.setAttribute('aria-expanded', isOpen);
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+        }
+
+        function closeMenu() {
+            navMenu.classList.remove('open');
+            hamburgerBtn.classList.remove('active');
+            navOverlay.classList.remove('active');
+            hamburgerBtn.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+
+        hamburgerBtn.addEventListener('click', toggleMenu);
+        navOverlay.addEventListener('click', closeMenu);
+
+        navLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    closeMenu();
+                }
+            });
+        });
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+
+        function updateActiveNav() {
+            var scrollPos = window.scrollY + 100;
+            sections.forEach(function(section) {
+                var top = section.offsetTop;
+                var height = section.offsetHeight;
+                var id = section.getAttribute('id');
+                var navLink = document.querySelector('.nav-link[href="#' + id + '"]');
+                if (navLink) {
+                    if (scrollPos >= top && scrollPos < top + height) {
+                        navLinks.forEach(function(l) { l.classList.remove('active'); });
+                        navLink.classList.add('active');
+                    }
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNav);
+
+        // Header scroll effect
+        var siteHeader = document.querySelector('.site-header');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                siteHeader.classList.add('scrolled');
+            } else {
+                siteHeader.classList.remove('scrolled');
+            }
+        });
+
+        // === PARTICLES ===
+        var particlesContainer = document.getElementById('heroParticles');
+        var colors = ['#FFD700', '#D4145A', '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7'];
+
+        for (var i = 0; i < 40; i++) {
+            var particle = document.createElement('div');
+            particle.classList.add('particle');
+            var size = Math.random() * 12 + 4;
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            particle.style.animationDuration = (Math.random() * 15 + 10) + 's';
+            particle.style.animationDelay = (Math.random() * 10) + 's';
+            particlesContainer.appendChild(particle);
+        }
+
+        // === LIGHTBOX ===
+        var lightbox = document.getElementById('lightbox');
+        var lightboxImg = document.getElementById('lightboxImg');
+        var lightboxClose = document.getElementById('lightboxClose');
+        var lightboxPrev = document.getElementById('lightboxPrev');
+        var lightboxNext = document.getElementById('lightboxNext');
+        var galleryItems = document.querySelectorAll('.gallery-item img');
+        var currentImageIndex = 0;
+        var galleryImages = [];
+
+        galleryItems.forEach(function(img, idx) {
+            galleryImages.push({ src: img.src, alt: img.alt });
+            img.parentElement.addEventListener('click', function() {
+                currentImageIndex = idx;
+                openLightbox(idx);
+            });
+            img.parentElement.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    currentImageIndex = idx;
+                    openLightbox(idx);
+                }
+            });
+            img.parentElement.setAttribute('tabindex', '0');
+            img.parentElement.setAttribute('role', 'button');
+            img.parentElement.setAttribute('aria-label', 'Ver imagen: ' + img.alt);
+        });
+
+        function openLightbox(index) {
+            lightboxImg.src = galleryImages[index].src;
+            lightboxImg.alt = galleryImages[index].alt;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            lightboxClose.focus();
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function navigateLightbox(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) currentImageIndex = galleryImages.length - 1;
+            if (currentImageIndex >= galleryImages.length) currentImageIndex = 0;
+            lightboxImg.src = galleryImages[currentImageIndex].src;
+            lightboxImg.alt = galleryImages[currentImageIndex].alt;
+        }
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightboxPrev.addEventListener('click', function() { navigateLightbox(-1); });
+        lightboxNext.addEventListener('click', function() { navigateLightbox(1); });
+
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) closeLightbox();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') navigateLightbox(-1);
+            if (e.key === 'ArrowRight') navigateLightbox(1);
+        });
+
+        // === COUNTER ANIMATION ===
+        var counters = document.querySelectorAll('.stat-number');
+        var countersAnimated = false;
+
+        function animateCounters() {
+            if (countersAnimated) return;
+            counters.forEach(function(counter) {
+                var target = parseInt(counter.getAttribute('data-target'));
+                var duration = 2000;
+                var step = target / (duration / 16);
+                var current = 0;
+
+                function updateCounter() {
+                    current += step;
+                    if (current < target) {
+                        counter.textContent = Math.floor(current) + '+';
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target + '+';
+                    }
+                }
+                updateCounter();
+            });
+            countersAnimated = true;
+        }
+
+        // === REVEAL ON SCROLL ===
+        var revealElements = document.querySelectorAll('.reveal');
+        var statsSection = document.querySelector('.stats-section');
+
+        var observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        var revealObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        revealElements.forEach(function(el) {
+            revealObserver.observe(el);
+        });
+
+        var statsObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+
+        // === PROGRAM TABS ===
+        var programTabs = document.querySelectorAll('.program-tab');
+        var programItems = document.querySelectorAll('.program-item');
+
+        programTabs.forEach(function(tab) {
+            tab.addEventListener('click', function() {
+                programTabs.forEach(function(t) {
+                    t.classList.remove('active');
+                    t.setAttribute('aria-selected', 'false');
+                });
+                tab.classList.add('active');
+                tab.setAttribute('aria-selected', 'true');
+
+                var day = tab.getAttribute('data-day');
+
+                programItems.forEach(function(item) {
+                    if (day === 'all' || item.getAttribute('data-day') === day) {
+                        item.style.display = '';
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        setTimeout(function() {
+                            item.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 50);
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // === BACK TO TOP ===
+        var backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // === FORM SUBMIT ===
+        var ctaForm = document.getElementById('ctaForm');
+
+        ctaForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var emailInput = document.getElementById('emailInput');
+            var email = emailInput.value.trim();
+
+            if (email) {
+                var btn = ctaForm.querySelector('.cta-btn');
+                btn.textContent = '¡Suscrito! ✅';
+                btn.style.background = '#2D6A4F';
+                btn.style.color = '#fff';
+                emailInput.value = '';
+
+                setTimeout(function() {
+                    btn.textContent = 'Suscribirme 🎉';
+                    btn.style.background = '';
+                    btn.style.color = '';
+                }, 3000);
+            }
+        });
+
+        // === KEYBOARD NAVIGATION FOR MENU ===
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+                closeMenu();
+                hamburgerBtn.focus();
+            }
+        });
+
+        // === SMOOTH SCROLL FOR ANCHOR LINKS ===
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                var targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                var targetEl = document.querySelector(targetId);
+                if (targetEl) {
+                    e.preventDefault();
+                    var headerHeight = document.querySelector('.site-header').offsetHeight;
+                    var targetPos = targetEl.offsetTop - headerHeight;
+                    window.scrollTo({
+                        top: targetPos,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
