@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://clavijoantonio.github.io/carnavalRiosucio/sitemap.xml
